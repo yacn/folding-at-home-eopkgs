@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fahviewer</Name>
+        <Packager>
+            <Name>Automated Packaging</Name>
+            <Email>noreply@solus-project.com</Email>
+        </Packager>
+        <Summary>Folding@home 3D Simulation Viewer</Summary>
+        <Description>Folding@home is a distributed computing project using volunteered computer resources.
+This package contains the 3D simulation viewer. It can connect to
+local or remote FAHClients and visualize the running simulations.</Description>
+        <License>Custom - https://foldingathome.org/support/faq/opensource/</License>
+        <Archive sha1sum="b0581a312d585d0cffe4e2edfa71503dea3f586c" type="binary">https://download.foldingathome.org/releases/public/release/fahviewer/debian-stable-64bit/v7.5/fahviewer_7.5.1_amd64.deb</Archive>
+    </Source>
+    <BuildDependencies>
+        <Dependency>bzip2</Dependency>
+        <Dependency>expat</Dependency>
+        <Dependency>freeglut</Dependency>
+        <Dependency>libglu</Dependency>
+        <Dependency>zlib</Dependency>
+    </BuildDependencies>
+    <Package>
+        <Name>fahviewer</Name>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>06-24-2018</Date>
+            <Version>7.5.1</Version>
+            <Comment>Add to repo</Comment>
+            <Name>Isaac Boehman</Name>
+            <Email>isaac@boehman.me</Email>
+        </Update>
+    </History>
+</PISI>

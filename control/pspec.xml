@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fahcontrol</Name>
+        <Packager>
+            <Name>Automated Packaging</Name>
+            <Email>noreply@solus-project.com</Email>
+        </Packager>
+        <Summary>Folding@Home Client Control</Summary>
+        <Description>Folding@home is a distributed computing project using volunteered computer resources.
+This package contains FAHControl, a graphical monitor and control
+utility for the Folding@home client. It gives an overview of running
+projects on the local and optional (remote) machines. Starting,
+stopping and pausing of the running projects is also possible, as is
+viewing the logs. It provides an Advanced view with
+additional information and settings for enthusiats and gurus.</Description>
+        <License>Custom - https://foldingathome.org/support/faq/opensource/</License>
+        <Archive sha1sum="d89a51fe224633d2c651694e1fd5c566d2a2572e" type="binary">https://download.foldingathome.org/releases/public/release/fahcontrol/debian-stable-64bit/v7.5/fahcontrol_7.5.1-1_all.deb</Archive>
+    </Source>
+    <BuildDependencies>
+        <Dependency>gnome-python</Dependency>
+    </BuildDependencies>
+    <Package>
+        <Name>fahcontrol</Name>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>06-24-2018</Date>
+            <Version>7.5.1</Version>
+            <Comment>Add to repo</Comment>
+            <Name>Isaac Boehman</Name>
+            <Email>isaac@boehman.me</Email>
+        </Update>
+    </History>
+</PISI>

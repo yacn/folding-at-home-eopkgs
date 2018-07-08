@@ -1,0 +1,12 @@
+[Unit]
+Description=FAHClient downloads/runs work units
+After=network.target
+
+[Service]
+User=fahclient
+Type=simple
+Environment=CONFIG=/etc/fahclient/config.xml
+ExecStart=/usr/bin/FAHClient
+
+[Install]
+WantedBy=multi-user.target
